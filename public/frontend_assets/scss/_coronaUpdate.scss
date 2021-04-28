@@ -1,0 +1,84 @@
+@mixin card($backgroundColor, $frontColor) {
+  width: 270px;
+  height: 200px;
+  //   margin-right: 5px;
+  //   padding: 0 10px;
+  background: $backgroundColor;
+  border-radius: 5px;
+  text-align: center;
+  h2 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: $frontColor;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+    color: white;
+    // padding: 5px;
+  }
+  i {
+    color: red;
+    font-size: 1.4rem;
+  }
+  .corona-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 18px 0;
+    .corona-item {
+      padding: 10px 15px;
+      width: 50%;
+      text-align: center;
+
+      h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 5px 0;
+        color: $frontColor;
+
+        &::after {
+          content: "";
+          background: $frontColor;
+          width: 80%;
+          height: 2px;
+          position: relative;
+          top: 5px;
+          left: 9px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// corona part title
+
+.corona-area-title h2 {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    background-color: #d61a66;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    display: block;
+  }
+}
+
+.corona-card-blue {
+  @include card(#e6f6f5, #00a79d);
+}
+.corona-card-red {
+  @include card(#fde8e9, #ed1c24);
+}
+.corona-card-green {
+  @include card(#e8f3d9, #8dc63f);
+}
+.corona-card-bright-blue {
+  @include card(#d4eef9, #27aae1);
+}

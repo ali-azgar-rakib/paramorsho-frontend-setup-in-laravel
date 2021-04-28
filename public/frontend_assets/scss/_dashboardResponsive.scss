@@ -1,0 +1,102 @@
+@media (max-width: 480px) {
+  .dashborad-grid {
+    grid-template-areas:
+      "dashboard-upper dashboard-upper"
+      "dashboard-body dashboard-body";
+  }
+
+  .dashboard-upper {
+    margin-right: 0;
+    height: 100px;
+  }
+
+  .dashboard-upper-flex {
+    margin: 0 5px;
+  }
+  .dashboard-upper {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .dashboard-profile-info {
+    margin-left: 56px;
+    margin-top: -50px;
+    h4 {
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 0.7rem;
+    }
+  }
+
+  .dashboard-header-button {
+    margin-left: 25px;
+    button {
+      background-color: $primaryColor;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+  }
+
+  .dashboard-side {
+    display: none;
+  }
+
+  .dashboard-body {
+    margin: 20px 14px;
+  }
+
+  .balence {
+    width: 150px;
+    height: 150px;
+    &:first-child {
+      margin-left: 10px;
+      margin-right: 10px;
+      h4 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 50px;
+        text-align: center;
+      }
+    }
+    input {
+      width: 90%;
+      padding: 2px;
+      margin: 10px 0;
+      outline: none;
+      border: none;
+      border: 1px solid $blackColor;
+      border-radius: 5px;
+      &:focus {
+        background: rgba(107, 105, 105, 0.329);
+        color: $blackColor;
+        padding: 2px;
+      }
+    }
+    button {
+      background-color: $primaryColor;
+      padding: 6px 30px;
+      color: $whiteColor;
+      border: none;
+      border-radius: 4px;
+      margin: 0 30px;
+      display: block;
+
+      &:hover {
+        background-color: $whiteColor;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+      }
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.sidebar__categories__all {
+  background: $primaryColor;
+  position: relative;
+  padding: 10px 25px 10px 40px;
+  cursor: pointer;
+
+  i {
+    font-size: 16px;
+    color: $whiteColor;
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+    color: $whiteColor;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    color: $whiteColor;
+  }
+  &:after {
+    position: absolute;
+    right: 18px;
+    top: 9px;
+    content: "3";
+    font-family: eleganticons;
+    font-size: 18px;
+    color: $whiteColor;
+  }
+}
+
+.sidebar__categories ul {
+  background: #ffdddc;
+  border: 1px solid #ebebeb;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  li {
+    list-style: none;
+
+    a {
+      font-size: 16px;
+      color: #1c1c1c;
+      line-height: 39px;
+      display: block;
+    }
+  }
+}

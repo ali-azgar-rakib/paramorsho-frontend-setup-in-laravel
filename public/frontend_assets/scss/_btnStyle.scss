@@ -1,0 +1,22 @@
+.primary-btn {
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 10px 28px;
+  color: $whiteColor;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: $primaryColor;
+  letter-spacing: 2px;
+  transition: all linear 0.3s;
+}
+
+.site-btn {
+  font-size: 14px;
+  color: $whiteColor;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 13px 30px 12px;
+  background: $primaryColor;
+  border: none;
+}

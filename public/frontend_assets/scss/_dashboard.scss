@@ -1,0 +1,123 @@
+.dashborad-grid {
+  display: grid;
+  grid-template-areas:
+    "dashboard-upper dashboard-upper dashboard-upper dashboard-upper"
+    "dashboard-side dashboard-body dashboard-body dashboard-body";
+  background-color: #fff;
+  padding: 0;
+}
+
+.dashboard-upper {
+  grid-area: dashboard-upper;
+  background-color: #f3f7f8;
+  height: 140px;
+}
+
+.dashboard-upper-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dashboard-upper {
+  display: flex;
+  margin-right: 100px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.dashboard-profile-info {
+  margin-left: 15px;
+  margin-top: 26px;
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+.dashboard-header-button button {
+  background-color: #d61a66;
+  padding: 8px 37px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+
+  &:hover {
+    background-color: #fff;
+    color: #d61a66;
+    border: 1px solid #d61a66;
+  }
+}
+
+.dashboard-side {
+  background-color: #f3f7f8;
+  grid-area: dashboard-side;
+  /* width: 30vw; */
+
+  ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    background: transparent;
+    float: right;
+
+    li {
+      background-color: #d61a66;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: transparent;
+        transition: all 0.2s;
+
+        &:hover {
+          color: #d61a66;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-body {
+  grid-area: dashboard-body;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.balence {
+  width: 200px;
+  height: 200px;
+  background: #f3f7f8;
+  border: 1px solid #d61a66;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px #f3f7f8;
+  text-align: center;
+
+  &:first-child {
+    margin-left: 150px;
+    margin-right: 10px;
+  }
+}
