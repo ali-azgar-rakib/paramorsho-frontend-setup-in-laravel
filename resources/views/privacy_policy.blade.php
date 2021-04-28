@@ -148,7 +148,7 @@
         <div class="col-lg-6">
           <nav class="header__menu">
             <ul>
-              <li class="active"><a href="">Home</a></li>
+              <li class="active"><a href="/">Home</a></li>
               <li><a href="{{ url('our-team') }}">Our Team</a></li>
               <!-- <li>
                   <a href="#">Pages</a>
